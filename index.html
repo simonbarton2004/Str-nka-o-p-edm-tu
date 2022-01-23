@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka o předmětu</title>
+
+    <link rel="stylesheet" href="https://api.cajthaml.eu/uploads/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Calibri', 'sans-serif';
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px #e5e5e5 solid;
+
+        }
+
+        nav .logo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+        }
+
+        nav .logo img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        nav .logo .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #126a78;
+            font-size: 3.5em;
+            font-weight: 900;
+        }
+
+        nav .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        nav .navbar .howGetPoints,
+        .application,
+        .finalWork,
+        .help,
+        .login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 115px;
+            height: 40px;
+            color: black;
+            font-weight: 500;
+        }
+
+        nav .navbar .howGetPoints {
+            margin-left: 248px;
+        }
+
+        nav .navbar .login {
+            background-color: #1a687b;
+            color: white;
+        }
+
+        main article {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main article .introduction {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        main article .introduction .navbar {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+        }
+
+        main article .introduction .navbar .tasks,
+        .FinalWork,
+        .activity,
+        .tests {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 250px;
+            color: white;
+            font-size: 1.25em;
+
+        }
+
+        main article .introduction img {
+            display: flex;
+            width: 1000px;
+            height: auto;
+        }
+
+        main article .introduction .navbar .tasks {
+            background-color: #16697b;
+        }
+
+        main article .introduction .navbar .FinalWork {
+            background-color: #db6300;
+        }
+
+        main article .introduction .navbar .activity {
+            background-color: #ffa62b;
+        }
+
+        main article .introduction .navbar .tests {
+            background-color: #393d46;
+        }
+
+        main article .introduction .imgDescription {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color: #333333;
+            border-top: 4px #212017 solid;
+            border-bottom: 4px #212017 solid;
+            color: rgb(165, 165, 165);
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 990px;
+        }
+
+        main article .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f2f2f2;
+            width: 100%;
+        }
+
+        main article .about .heading {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            color: black;
+            width: 100%;
+            margin-top: 30px;
+            letter-spacing: 4px;
+        }
+
+        main article .about .headingLine {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+
+        }
+
+        main article .about .headingLine .line {
+            display: flex;
+            width: 220px;
+            height: 4px;
+            background-color: #cecece;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        main article .about .text {
+            display: flex;
+            justify-content: center;
+            color: black;
+            width: 100%;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        main article .infoWhy {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 3px #db6300 solid;
+            width: 220px;
+            height: 180px;
+            color: #db6300;
+        }
+
+        main article .infoWhy .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+            width: 70px;
+            height: 70px;
+            border: 3px #db6300 solid;
+            border-radius: 100%;
+
+        }
+
+        main article .infoWhy .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            width: 100%;
+        }
+
+        main article .infoWhy #text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        main article .infoWhy #application,
+        .haf {
+            border: 3px #16697b solid;
+            color: #16697b;
+        }
+
+        main article .infoWhy #application .icon {
+            border: 3px #16697b solid;
+        }
+
+        main article .infoWhy .haf .icon {
+            border: 3px #16697b solid;
+        }
+
+        main article .citation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f2f2f2;
+            width: 100%;
+            padding-top: 40px;
+        }
+
+        main article .citation .citationText {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: black;
+            padding-bottom: 30px;
+        }
+
+        main article .citation .citationSource {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: black;
+            padding-right: 150px;
+            width: 850px;
+            padding-bottom: 30px;
+            font-size: 1.25em;
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+        }
+
+        footer .website,
+        .contact,
+        .wba {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 33%;
+            color: white;
+        }
+
+        footer .heading {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            font-size: 1.25em;
+            font-weight: 800;
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-bottom: 15px;
+        }
+
+        footer .text {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            padding-left: 50px;
+            padding-bottom: 70px;
+            font-size: 0.9em;
+            color: rgb(143, 143, 143);
+        }
+
+        footer .text1 {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            padding-left: 50px;
+
+        }
+
+        footer .text2 {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            font-size: 0.9em;
+            padding-left: 50px;
+            padding-bottom: 30px;
+            color: rgb(143, 143, 143);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png" alt="">
+            <div class="text">WBA</div>
+        </div>
+        <div class="navbar">
+            <div class="howGetPoints">Jak získat body</div>
+            <div class="application">Uplatnění</div>
+            <div class="finalWork">Závěrečná práce</div>
+            <div class="help">Nápověda</div>
+            <div class="login">Přihlásit se</div>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <section class="introduction">
+                <div class="navbar">
+                    <div class="tasks">ÚKOLY</div>
+                    <div class="FinalWork">ZÁVĚREČNÁ PRÁCE</div>
+                    <div class="activity">AKTIVITA</div>
+                    <div class="tests">TESTY</div>
+                </div>
+                <img src="https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/google_eTAtUtuf.jpg" alt="">
+                <div class="imgDescription">© Pixabay 2020</div>
+            </section>
+            <section class="about">
+                <div class="heading">O PŘEDMĚTU</div>
+                <div class="headingLine">
+                    <div class="line"></div>
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, sint? Quia nemo, fugiat <br>
+                        laborelaudantium sed
+                        itaque, dolorum explicabo nisi similique, modi magni quos delectus<br> libero quis architecto
+                        consequuntur facere?<br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ut debitis, deserunt cum
+                        dolortempora<br>
+                        asperiores voluptate, esse voluptatibus, quo praesentium maiores eaque consequatur in!<br>
+                        Eaque cum recusandae delectus ex.<br>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+            </section>
+            <section class="infoWhy">
+                <div class="time">
+                    <div class=icon><i class="fas fa-hourglass-half"></i></div>
+                    <div class="title">ČASOVÁ DOTACE</div>
+                    <div id="text">
+                        <p>Časová dotace na WBA<br>
+                            jsou 2 hodiny týdně.</p>
+                    </div>
+                </div>
+                <div id="application">
+                    <div class=icon><i class="fas fa-school"></i></div>
+                    <div class="title">UPLATNĚNÍ</div>
+                    <div id="text">
+                        <P>Z webových aplikací lze <br>
+                            maturovat pomocí MVOP.</P>
+                    </div>
+                </div>
+                <div class="cancel">
+                    <div class=icon><i class="fas fa-virus-slash"></i></div>
+                    <div class="title">ZRUŠÍME TO</div>
+                    <div id="text">
+                        <p>Ten virus musíme zrušit.<br>
+                            Počkat, kde to jsem?</p>
+                    </div>
+                </div>
+                <div class="haf">
+                    <div class=icon><i class="fas fa-cat"></i></div>
+                    <div class="title">HAF!</div>
+                    <div id="text">
+                        <p>Haf? :monkaW:</p>
+                    </div>
+                </div>
+            </section>
+            <section class="citation">
+                <div class="citationText"> „ Všeljaké kvaltování toliko pro hovada dobré jest “</div>
+                <div Class="citationSource">- idk, někdo na chodbě</div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="website">
+            <div class="heading">Webové stránky</div>
+            <div class="text">
+                <p>Stránky nereflektují žádné reálné informace,<br>
+                    veškerý text je humorného rázu - neberte jej<br>
+                    seriózně. Určeno pro studium na SSPŠ🤍.
+
+                </p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="heading">Kontakt</div>
+            <div class="text">
+                <p>matej.cajthaml@ssps.cz<br>
+                    <br>
+                    +420 284 016 111
+                </p>
+            </div>
+        </div>
+        <div class="wba">
+            <div class="heading">WBA</div>
+            <div class="text1">
+                <P>ÚŽASNÉ<br>
+                    <br>
+                    KRÁSNÉ<br>
+                    <br>
+                    VTIPNÉ<br>
+                    <br>
+                </P>
+            </div>
+            <div class="text2">2021 © Matěj Cajthaml</div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
