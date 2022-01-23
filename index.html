@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     <style>
         body {
             font-family: 'Calibri', 'sans-serif';
+            
         }
 
         nav {
@@ -121,7 +122,7 @@
 
         main article .introduction img {
             display: flex;
-            width: 1000px;
+            width: 100%;
             height: auto;
         }
 
@@ -152,7 +153,7 @@
             padding-right: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
-            width: 990px;
+            width: 100%;
         }
 
         main article .about {
@@ -290,7 +291,7 @@
             align-items: center;
             color: black;
             padding-right: 150px;
-            width: 850px;
+            width: 100%px;
             padding-bottom: 30px;
             font-size: 1.25em;
         }
@@ -352,6 +353,224 @@
             padding-left: 50px;
             padding-bottom: 30px;
             color: rgb(143, 143, 143);
+
+
+        }
+
+        @media (min-width: 901px) and (max-width: 1400px) {
+            main>article {
+                width: 750px;
+            }
+
+            footer {
+                width: 750px;
+            }
+
+            main>article>.introduction {
+                width: 750px;
+            }
+
+            main article .introduction .navbar .tasks,
+            .FinalWork,
+            .activity,
+            .tests {
+                height: 60px;
+                width: 187.5px;
+                font-size: 0.8em;
+
+            }
+            nav .navbar .howGetPoints {
+                margin-left: 20px;
+            }
+            main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            width: 170px;
+        }
+
+        }
+
+        @media (min-width: 500px) and (max-width: 900px){
+
+            body{
+                font-size: 0.7em;
+            }
+
+            main>article {
+                width: 400px;
+            }
+
+            footer {
+                width: 400px;
+                font-size: 1.15em;
+            }
+
+            main>article>.introduction {
+                width: 400px;
+                font-size: 1.15em;
+            }
+
+            main article .introduction .navbar .tasks,
+            .FinalWork,
+            .activity,
+            .tests {
+                height: 35px;
+                width: 100.5px;
+                font-size: 0.9em;
+
+            }
+            nav .navbar .howGetPoints {
+                margin-left: 20px;
+            }
+            main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            width: 170px;
+        }
+
+        nav{
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+        nav .navbar .howGetPoints,
+        .application,
+        .finalWork,
+        .help,
+        .login {
+        
+            width: 90px;
+            height: 40px;
+        }
+        main article .infoWhy {
+            flex-wrap: wrap;
+            width: 100%;
+            font-size: 1.15em;
+        }
+        main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        }
+        
+        main article .introduction .imgDescription {
+            
+            border-top: 2px #212017 solid;
+            border-bottom: 2px #212017 solid;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            font-size: 0.9em;
+        }
+
+        }
+
+        @media (max-width: 500px){
+
+            body{
+                font-size: 0.6em;
+            }
+
+            main>article {
+                width: 300px;
+            }
+
+            footer {
+                width: 300px;
+                font-size: 1.35em;
+                flex-direction: column;
+            }
+
+            footer .website,
+        .contact,
+        .wba {
+            
+            width: 100%;
+            
+        }
+
+            main>article>.introduction {
+                width: 300px;
+                
+            }
+            main>article>.introduction .navbar {
+                width: 100%;
+                flex-wrap: wrap;
+                
+            }
+
+            main article .introduction .navbar .tasks,
+            .FinalWork,
+            .activity,
+            .tests {
+                height: 35px;
+                width: 150px;
+                font-size: 0.9em;
+                margin-bottom: 10px;
+                font-size: 1.25em;
+
+            }
+
+            main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            width: 170px;
+        }
+
+        nav{
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+        nav .navbar .howGetPoints,
+        .application,
+        .finalWork,
+        .help,
+        .login {
+        
+            width: 90px;
+            height: 40px;
+            
+        }
+        main article .infoWhy {
+            flex-wrap: wrap;
+            width: 80%;
+            font-size: 1.15em;
+        }
+        main article .infoWhy .time,
+        #application,
+        .cancel,
+        .haf {
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        } 
+        
+        nav .navbar {
+            flex-direction: column;
+            font-size: 1.15em;
+
+        }
+        nav .navbar .howGetPoints {
+                margin-left: 0px;
+            }
+
+            main article .citation .citationText {
+                font-size: 1.25em;
+        }
+
+        main article .introduction .imgDescription {
+            
+            border-top: 1px #212017 solid;
+            border-bottom: 1px #212017 solid;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            font-size: 0.7em;
+        }
+
+
+
 
 
         }
